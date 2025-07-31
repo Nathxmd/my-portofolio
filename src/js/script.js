@@ -70,3 +70,45 @@ if (
 } else {
   darkToggle.checked = false;
 }
+
+function sendWhatsApp() {
+  console.log("sendWhatsApp function called");
+  const phonenumber = "+6281818494295";
+
+  const nameElement = document.querySelector(".name");
+  const emailElement = document.querySelector(".email");
+  const messageElement = document.querySelector(".message");
+
+  if (!nameElement || !emailElement || !messageElement) {
+    console.error("One or more form elements not found");
+    alert("Sorry, there was an error. Please try again later.");
+    return;
+  }
+
+  const name = nameElement.value.trim();
+  const email = emailElement.value.trim();
+  const message = messageElement.value.trim();
+
+  if (!name || !email || !message) {
+    console.error("One or more form fields are empty");
+    alert("Please fill in all fields before sending.");
+    return;
+  }
+
+  console.log("Name:", name);
+  console.log("email:", email);
+  console.log("Message:", message);
+
+  const url =
+    `https://wa.me/${phonenumber}?text=` +
+    encodeURIComponent(
+      `*Name:* ${name}\n` +
+        `*Subject:* ${email}\n` +
+        `*Message:* ${message}\n\n` +
+        "Thanks for Your message!!!"
+    );
+
+  console.log("WhatsApp URL:", url);
+
+  window.open(url, "_blank");
+}

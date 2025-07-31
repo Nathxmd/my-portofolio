@@ -290,14 +290,12 @@
               Latest Projects
             </h2>
             <p class="font-medium text-medium text-secondary lg:text-xl">
-              Welcome to my portfolio! Here, you'll find a collection of
-              projects that I’ve had the pleasure of working on. Each project
-              showcases my skills, creativity, and dedication to delivering
-              high-quality results. From initial concept to final execution, I
-              strive to approach every task with a balance of professionalism
-              and passion. Explore my work, and feel free to reach out if you’d
-              like to learn more or discuss potential collaborations. I’m always
-              open to new ideas and challenges!
+              Explore a curated collection of my latest projects, each
+              reflecting my passion for web development and commitment to
+              quality. From innovative designs to functional applications, these
+              projects demonstrate my skills in creating impactful digital
+              experiences. Dive in to see how I turn ideas into reality and feel
+              free to connect for collaborations or inquiries.
             </p>
           </div>
         </div>
@@ -344,53 +342,55 @@
           <div class="mb-12 p-4 lg:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden mb-5">
               <img
-                src="img/projects/kota-salatiga.png"
+                src="img/projects/BlogPages.png"
                 alt="salatiga"
                 width="w-full"
               />
             </div>
             <h3 class="font-semibold text-xl text-dark mb-3 dark:text-white">
-              Kota salatiga
+              Blog pages
             </h3>
             <p class="font-medium text-base text-secondary">
-              A comprehensive and interactive website offering detailed
-              information about the city of Salatiga. The design features a
-              dynamic and user-friendly sidebar, ensuring smooth navigation
-              through various sections.
+              Blog Pages is a blog website built using Next.js, offering
+              comprehensive features such as login, post creation, editing, and
+              deletion. Integrated with MySQL through PrismaORM, this platform
+              provides an efficient and easy-to-use content management
+              experience.
             </p>
           </div>
           <div class="mb-12 p-4 lg:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden mb-5">
               <img
-                src="img/projects/password-generator.png"
+                src="img/projects/LezzatoPasto.png"
                 alt="password-generator"
                 width="w-full"
               />
             </div>
             <h3 class="font-semibold text-xl text-dark mb-3 dark:text-white">
-              Password Generator
+              LezzatoPasto
             </h3>
             <p class="font-medium text-base text-secondary">
-              A simple yet powerful web tool designed to create secure, random
-              passwords instantly. It offers flexibility and ease for users who
-              prioritize online security.
+              LezzatoPasto is an online spaghetti restaurant website designed
+              for customer convenience, with a direct chat feature on WhatsApp
+              for instant ordering. This platform combines delicious cuisine
+              with easy communication to increase customer satisfaction.
             </p>
           </div>
           <div class="mb-12 p-4 lg:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden mb-5">
               <img
-                src="img/projects/color-picker.png"
+                src="img/projects/MovieFinder.png"
                 alt="color-picker"
                 width="w-full"
               />
             </div>
             <h3 class="font-semibold text-xl text-dark mb-3 dark:text-white">
-              Color Picker
+              Movie Finder
             </h3>
             <p class="font-medium text-base text-secondary">
-              A website that lets users dynamically change the background using
-              CSS and JavaScript, offering a fun and creative way to explore
-              different design aesthetics in real time.
+              Movie Finder is a dynamic ReactJS-based web application that helps
+              users easily find movies. It displays a list of recommended movies
+              on the main page, making movie exploration fun and intuitive.
             </p>
           </div>
         </div>
@@ -422,9 +422,9 @@
                 >Nama</label
               >
               <input
-                type="text"
+                type="name"
                 id="name"
-                class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="name w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -434,7 +434,7 @@
               <input
                 type="email"
                 id="email"
-                class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="email w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -442,13 +442,15 @@
                 >Message Me</label
               >
               <textarea
-                type="email"
-                id="email"
-                class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+                id="message"
+                class="message w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
+                id="sendWhatsAppButton"
+                type="submit"
+                onclick="sendWhatsApp();"
                 class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 shadow-lg transition duration-500"
               >
                 Contact Me
